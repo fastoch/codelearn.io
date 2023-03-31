@@ -13,6 +13,6 @@ For l=11 and r=100 the output should be maxXOR(l,r)=127
 
 def maxXOR(l,r):
     list = []                   # list which will contain the results of all XOR operations
-    for i in range(l, r+1):     # for every value between l and r
+    for i in range(l, r):     
         list.append(i^r)        # add the result of each xor operation to my list
-    return max(list)        
+    return max(list)   
