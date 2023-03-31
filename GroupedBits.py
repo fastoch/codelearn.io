@@ -8,3 +8,4 @@ def groupedBits(n):
     return num_groups_1
     
 # issue: counting 1 bits individually, even grouped ones
+# clue: https://www.w3schools.com/python/trypython.asp?filename=demo_regex_findall
