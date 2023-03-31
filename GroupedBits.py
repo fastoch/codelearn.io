@@ -14,3 +14,4 @@ def groupedBits(n):
     # txt = "10011101011"
     # x = re.findall("1+", txt)
     # print(x)
+# output will be: ['1', '111', '1', '11']
