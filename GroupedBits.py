@@ -7,4 +7,4 @@ def groupedBits(n):
             num_groups_1 += 1
     return num_groups_1
     
-# 3/6 test case(s) is/are correct.
+# issue: counting 1 bits individually, even grouped ones
