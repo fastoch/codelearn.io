@@ -5,7 +5,6 @@ Given an integer n, count the number of groups of consecutive 1 bits in its bina
 
 For n = 1259, the output should be GroupedBits(n) = 4.
 The binary representation of 1259 is 10011101011, wich contains 4 groups of 1 bits.
-
 """
 
 import re
