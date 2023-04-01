@@ -6,19 +6,21 @@ see details in electronicScreen.png
 from textwrap import wrap
 
 def electronicScreen(s):
-    s = wrap(s, 8)      # splitting the string into chunks of 8 characters
+    split_str = wrap(s, 8)      # splitting the string into chunks of 8 characters
+    list = []                   # list which will contain different digits
 
-    switch:
-        case(s == '')   # 0
-                        # 1
-                        # 2
-                        # 3
-                        # 4
-                        # 5
-                        # 6
-                        # 7
-                        # 8
-                        # 9
+    for i in range(1, len(s)):
+        switch:
+            case(s[i] == '')    # 0
+            case(s[i] == '')                 # 1
+                            # 2
+                            # 3
+                            # 4
+                            # 5
+                            # 6
+                            # 7
+                            # 8
+                            # 9
         
     return 
     
