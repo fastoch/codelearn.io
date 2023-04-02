@@ -10,16 +10,26 @@ def electronicScreen(s):
     digits = ""                 # empty string which will contain the final number
 
     for i in split_str:
-        switch:
-            case(split_str[i] == '')    # 0
-            case(split_str[i] == '')    # 1
-            case(split_str[i] == '')    # 2
-            case(split_str[i] == '')    # 3
-            case(split_str[i] == '')    # 4
-            case(split_str[i] == '')    # 5
-            case(split_str[i] == '')    # 6
-            case(split_str[i] == '')    # 7
-            case(split_str[i] == '')    # 8
-            case(split_str[i] == '')    # 9
+        match split_str:
+            case'01011111':
+                digits + 0
+            case '00000101':
+                digits + 1
+            case '01110110':
+                digits + 2
+            case '01110101'):
+                digits + 3
+            case '':
+                digits + 4
+            case '':
+                digits + 5
+            case '':
+                digits + 6 
+            case '':
+                digits + 7
+            case '':
+                digits + 8
+            case '':
+                digits + 9
         
     return 
