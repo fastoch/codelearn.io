@@ -7,7 +7,7 @@ from textwrap import wrap
 
 def electronicScreen(s):
     split_str = wrap(s, 8)      # split the string into chunks of 8 characters and put them into a list
-    digits = ""                 # empty string which will contain the final number
+    digits = ''                 # empty string which will contain the final number
 
     for i in split_str:
         match i:
