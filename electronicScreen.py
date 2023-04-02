@@ -19,17 +19,17 @@ def electronicScreen(s):
                 digits + 2
             case '01110101'):
                 digits + 3
-            case '':
+            case '00101101':
                 digits + 4
-            case '':
+            case '01111001':
                 digits + 5
-            case '':
+            case '01111011':
                 digits + 6 
-            case '':
+            case '01000101':
                 digits + 7
-            case '':
+            case '01111111':
                 digits + 8
-            case '':
+            case '01111101':
                 digits + 9
         
-    return 
+    return digits
