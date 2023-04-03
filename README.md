@@ -1,2 +1,2 @@
-# codelearn.io  
-Solving programming challenges with codelearn.io (similar to codewars.com or leetcode.com)
+# [CodeLearn](https://codelearn.io)  
+Solving programming challenges with codelearn.io (similar to [CodeWars](https://codewars.com) or [LeetCode](https://leetcode.com)
