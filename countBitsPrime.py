@@ -1,7 +1,6 @@
 def count_bits_prime(L,R):
     myList = []             # will contain strings representing binary numbers between L and R
     count_bit_1 = 0         # counts the number of bits set to 1 for each integer between L and R
-    is_prime = False        # flag variable for checking if each count_bit_1 is prime
     count_is_prime = 0      # counts how many binary numbers between L and R have a count_bit_1 that is prime  
 
     for number in range(L, R+1):
