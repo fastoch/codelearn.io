@@ -8,26 +8,19 @@ def count_bits_prime(L,R):
         conv = str(bin(number))    # convert numbers into binaries and binaries into strings
         conv = conv[2:]            # ignore the '0b' prefix inherent to the binary conversion
         myList.append(conv)        # Then, feed my list with those strings 
-    print(myList)
                                                 
     for item in myList:                     # for each string/binary in myList
         for i in range(0, len(item)):       # check every single character
             if item[i] == "1":              # if it's a 1
                 count_bit_1 += 1            # increment count_bit_1
-        print(count_bit_1)
 
         # checking if current count_bit_1 is prime 
-        if count_bit_1 > 1:                         # 0 and 1 have no dividers but are not considered prime numbers
-            for n in range(2, count_bit_1 + 1):     # first arg is inclusive, but second arg of range is exclusive, hence the +1 
-                if (count_bit_1 % n) == 0:
-                    count_is_prime += 1
-        else: 
-            count_is_prime = 0
+        if count_bit_1 > 1:                 # 0 and 1 are not prime numbers
+            if count_bit_1 == 2:            # 2 is a special case
+                count_is_prime += 1
+            elif count_bit_1 % 2 != 0:
+                count_is_prime += 1
 
         count_bit_1 = 0        # reset count_bit_1 for checking next item in my list 
 
     return count_is_prime
-
-print("Result: ", count_bits_prime(6,10))
-
-# remove print statements when my program works
