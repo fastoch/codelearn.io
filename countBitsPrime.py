@@ -16,7 +16,7 @@ def count_bits_prime(L,R):
 
         # checking if current count_bit_1 is prime 
         if count_bit_1 > 1:                 # 0 and 1 are not prime numbers
-            if count_bit_1 == 2:            # 2 is a special case
+            if count_bit_1 == 2:            # 2 is a special case since 2 % 2 == 0
                 count_is_prime += 1
             elif count_bit_1 % 2 != 0:
                 count_is_prime += 1
