@@ -1,7 +1,7 @@
 def count_bits_prime(L,R):
     myList = []             # will contain strings representing binary numbers between L and R
     count_bit_1 = 0         # counts the number of bits set to 1 for each integer between L and R
-    remainder = 0           # keeps track of remainders for each modulo operation on count_bit_1 
+    remainders = 0          # keeps track of remainders for each modulo operation on count_bit_1 
     count_is_prime = 0      # counts how many binary numbers between L and R have a count_bit_1 that is prime  
 
     for number in range(L, R+1):
@@ -15,12 +15,11 @@ def count_bits_prime(L,R):
 
             # checking if current count_bit_1 is prime 
             for n in range(2, count_bit_1):
-                remainder += (count_bit_1 % n)
-            # incrementing counter if it's prime
-            if remainder == 0:
+                remainders += (count_bit_1 % n)
+            # incrementing counter if it's prime (if all remainders are equal to 0)
+            if remainders == 0:
                 count_is_prime += 1
                              
-
             count_bit_1 = 0             # reset count_bit_1 for checking next item in my list 
 
     return count_is_prime
