@@ -5,12 +5,12 @@ def count_bits_prime(L,R):
     count_is_prime = 0      # counts how many binary numbers between L and R have a count_bit_1 that is prime  
 
     for number in range(L, R+1):
-        conv = str(bin(number))             # convert numbers into binaries and binaries into strings
+        conv = str(bin(number))    # convert numbers into binaries and binaries into strings
         myList.append(conv)        # Then, feed my list with those strings 
                                                 
     for item in myList:                 # for each string/binary in myList
-        for i in range(0, len(i)):      # check every single character
-            if myList[i] == "1":        # if it's a 1
+        for i in range(0, len(item)):      # check every single character
+            if item[i] == "1":        # if it's a 1
                 count_bit_1 += 1        # increment count_bit_1
 
         # checking if current count_bit_1 is prime 
