@@ -6,12 +6,15 @@ def count_bits_prime(L,R):
 
     for number in range(L, R+1):
         conv = str(bin(number))    # convert numbers into binaries and binaries into strings
+        conv = conv[2:]            # ignore the '0b' prefix inherent to the binary conversion
         myList.append(conv)        # Then, feed my list with those strings 
                                                 
-    for item in myList:                 # for each string/binary in myList
-        for i in range(0, len(item)):      # check every single character
-            if item[i] == "1":        # if it's a 1
-                count_bit_1 += 1        # increment count_bit_1
+    for item in myList:                     # for each string/binary in myList
+        for i in range(0, len(item)):       # check every single character
+            if item[i] == "1":              # if it's a 1
+                count_bit_1 += 1            # increment count_bit_1
+
+# OK until this point
 
         # checking if current count_bit_1 is prime 
         for n in range(2, count_bit_1):
