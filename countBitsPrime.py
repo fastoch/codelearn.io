@@ -6,7 +6,7 @@ def count_bits_prime(L,R):
 
     for number in range(L, R+1):
         conv = str(bin(number))             # convert numbers into binaries and binaries into strings
-        myList = myList.append(conv)        # Then, feed my list with those strings 
+        myList.append(conv)        # Then, feed my list with those strings 
                                                 
     for item in myList:                 # for each string/binary in myList
         for i in range(0, len(i)):      # check every single character
